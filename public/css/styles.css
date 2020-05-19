@@ -1,0 +1,130 @@
+/* colours */
+
+
+/* :root {
+    --primary: #FFE9D2;
+    --secondary: #FFE1C4;
+    --title: #FF8816;
+} */
+
+:root {
+    --primary: rgb(210, 245, 255);
+    --secondary: rgb(196, 231, 255);
+    --title: rgb(22, 150, 255);
+}
+
+
+/* layout styles */
+
+nav {
+    background: var(--primary);
+    border-bottom: 10px solid var(--secondary);
+}
+
+nav a {
+    text-transform: uppercase;
+    color: var(--title);
+}
+
+nav a span {
+    font-weight: bold;
+}
+
+nav .sidenav-trigger {
+    margin: 0;
+}
+
+
+/* timer styles */
+
+.timers {
+    margin-top: 20px;
+}
+
+.card-panel.timer {
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 1px 3px rgba(90, 90, 90, 0.1);
+    display: grid;
+    grid-template-columns: 2fr 6fr 6fr 1fr;
+    grid-template-areas: "image details stopwatch delete";
+    position: relative;
+    min-height: 70px;
+}
+
+.timer-details {
+    margin-top: 6px;
+}
+
+.timer-delete {
+    grid-area: delete;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.timer-delete i {
+    font-size: 18px;
+}
+
+.timer-settings {
+    grid-area: delete;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.timer-settings i {
+    font-size: 18px;
+}
+
+.timer-title {
+    font-weight: bold;
+}
+
+.timer-description {
+    font-size: 0.8em;
+}
+
+
+/* form-styles */
+
+.add-btn {
+    background: var(--title) !important;
+}
+
+input {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.side-form button {
+    background: var(--title);
+    box-shadow: 1px 1px 3px rgba(90, 90, 90, 0.2);
+}
+
+form .input-field {
+    margin-top: 30px;
+}
+
+
+/* Stopwatch */
+
+.stopwatch {
+    background-color: white;
+    border: 1px solid #eee;
+    padding: 5px;
+    margin: 5px;
+    grid-area: stopwatch;
+    font-size: 1.5em;
+}
+
+.stopwatch span {
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.stopwatch a {
+    padding-right: 5px;
+    text-decoration: none;
+}
